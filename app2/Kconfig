@@ -1,0 +1,10 @@
+#module = MAIN
+#module-str = main
+#source "subsys/logging/Kconfig.template.log_config"
+menu "Zephyr"
+rsource "$ZEPHYR_BASE/Kconfig.zephyr"
+endmenu
+
+module = APP
+module-str = app
+source "subsys/logging/Kconfig.template.log_config"

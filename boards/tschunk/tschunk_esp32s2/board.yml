@@ -1,0 +1,5 @@
+board:
+  name: tschunk_esp32s2
+  vendor: tschunk
+  socs:
+  - name: esp32s2

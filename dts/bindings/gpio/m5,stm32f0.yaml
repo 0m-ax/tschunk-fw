@@ -1,0 +1,17 @@
+# Copyright (c) 2018, Aapo Vienamo
+# Copyright (c) 2021, Laird Connectivity
+# SPDX-License-Identifier: Apache-2.0
+
+description: TCA9538 GPIO node
+
+compatible: "m5,stm32f0"
+
+include: [i2c-device.yaml, gpio-controller.yaml]
+
+properties:
+  "#gpio-cells":
+    const: 2
+
+gpio-cells:
+  - pin
+  - flags

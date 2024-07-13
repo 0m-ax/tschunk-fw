@@ -1,0 +1,13 @@
+# PCA953X GPIO configuration options
+
+# Copyright (c) 2018 Aapo Vienamo
+# Copyright (c) 2021 Laird Connectivity
+# SPDX-License-Identifier: Apache-2.0
+
+menuconfig GPIO_M5STM32F0
+	bool "M5 STM32F0 I2C GPIO chip"
+	default y
+	select I2C
+	help
+	  Enable driver for PCA953X I2C GPIO chip.
+

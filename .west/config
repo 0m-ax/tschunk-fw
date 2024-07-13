@@ -1,7 +1,9 @@
 [manifest]
-path = zephyr
+path = .
 file = west.yml
 
 [zephyr]
-base = zephyr
+base = sdk/zephyr
+[build]
+board_dir = .
 

@@ -1,0 +1,16 @@
+# ESP32S2 LOLIN S2 MINI board configuration
+
+# Copyright (c) 2023 Google, LLC
+# SPDX-License-Identifier: Apache-2.0
+
+config ENTROPY_GENERATOR
+	default y
+
+config HEAP_MEM_POOL_ADD_SIZE_BOARD
+	int
+	default 32768 if WIFI
+	default 4096
+
+
+config BOARD_TSCHUNK_ESP32S2
+	select SOC_ESP32S2_SOLO_N4R2
