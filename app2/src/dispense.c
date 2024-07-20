@@ -168,15 +168,12 @@ struct step {
 };
 struct step steps[] = {
     {.ingredient = &ingredients[SUGAR], .time = K_MSEC(500)},
-    {.ingredient = &ingredients[SUGAR], .time = K_MSEC(500)},
-    {.ingredient = &ingredients[SUGAR], .time = K_MSEC(500)},
-    {.ingredient = &ingredients[SUGAR], .time = K_MSEC(500)},
     {
         .ingredient = &ingredients[RUM],
         .time = K_SECONDS(10),
     },
-    {.ingredient = &ingredients[ICE], .time = K_SECONDS(6)},
-    {.ingredient = &ingredients[MATE], .time = K_SECONDS(7)},
+    {.ingredient = &ingredients[ICE], .time = K_SECONDS(8)},
+    {.ingredient = &ingredients[MATE], .time = K_SECONDS(6)},
     {.ingredient = &ingredients[LIME], .time = K_SECONDS(2)}};
 bool dispense_running = 0;
 int dispense_current_ingredient = 0;
